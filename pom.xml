@@ -26,7 +26,7 @@
 	<properties>
 		<main.basedir>${basedir}</main.basedir>
 		<jackson.version>2.11.3</jackson.version>
-		<spring-cloud-commons.version>3.1.1-SNAPSHOT</spring-cloud-commons.version>
+		<spring-cloud-commons.version>3.1.0</spring-cloud-commons.version>
 
 		<!-- Plugin versions -->
 		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
@@ -71,14 +71,14 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>io.spring.javaformat</groupId>
-				<artifactId>spring-javaformat-maven-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>io.spring.javaformat</groupId>-->
+<!--				<artifactId>spring-javaformat-maven-plugin</artifactId>-->
+<!--			</plugin>-->
 			<plugin>
 				<groupId>org.basepom.maven</groupId>
 				<artifactId>duplicate-finder-maven-plugin</artifactId>
@@ -91,14 +91,14 @@
 		</plugins>
 	</build>
 
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</reporting>
+<!--	<reporting>-->
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
+<!--	</reporting>-->
 
 	<dependencyManagement>
 		<dependencies>
