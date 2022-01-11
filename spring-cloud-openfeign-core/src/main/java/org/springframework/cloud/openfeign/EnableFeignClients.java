@@ -38,6 +38,9 @@ import org.springframework.context.annotation.Import;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
+// 启用该注解，先注入  FeignClientsRegistrar 初始化 前置加载的类
+// import https://blog.csdn.net/mamamalululu00000000/article/details/86711079
+// https://blog.csdn.net/jiachunchun/article/details/94569246
 @Import(FeignClientsRegistrar.class)
 public @interface EnableFeignClients {
 
